@@ -1,0 +1,68 @@
+{
+  "schema": "travelbuddy_turn_log_v1",
+  "timestamp_local": "2026-04-07T16:55:14.630801+07:00",
+  "timestamp_utc": "2026-04-07T09:55:14.631800+00:00",
+  "log_file": "turn_20260407_165514_630801.json",
+  "summary_text": "Thoi gian (may local): 2026-04-07T16:55:14.630801+07:00\nThoi gian (UTC): 2026-04-07T09:55:14.630801+00:00\nTen file: turn_20260407_165514_630801.json\n\n[Nguoi dung]\ntôi thích lên núi\n\n[Trace] intent=react_langgraph | hanh_dong=trả_lời_trực_tiếp\n[Workflow]\n  - Nhận yêu cầu người dùng\n  - LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)\n  - Trả lời cuối cho người dùng\n\n[Tool calls] tong so lan goi: 0\n\n[Tin nhan trong luot - tom tat (xem messages_in_turn day du)]\n  - HumanMessage: tôi thích lên núi\n  - AIMessage: Trong phạm vi dữ liệu hiện tại, mình không có thông tin về các điểm đến núi. Tuy nhiên, nếu bạn muốn khám phá các thành phố như Đà Nẵng, Phú Quốc hay Hồ Chí Minh, mình có thể giúp bạn tìm chuyến bay và khách sạn ở đó. Bạn muốn đi từ đâu và có ngân sách bao nhiêu?\n\n[Cau tra loi cuoi]\nTrong phạm vi dữ liệu hiện tại, mình không có thông tin về các điểm đến núi. Tuy nhiên, nếu bạn muốn khám phá các thành phố như Đà Nẵng, Phú Quốc hay Hồ Chí Minh, mình có thể giúp bạn tìm chuyến bay và khách sạn ở đó. Bạn muốn đi từ đâu và có ngân sách bao nhiêu?\n\n[Bo nho session sau luot - JSON]\n{}",
+  "user_input": "tôi thích lên núi",
+  "final_reply": "Trong phạm vi dữ liệu hiện tại, mình không có thông tin về các điểm đến núi. Tuy nhiên, nếu bạn muốn khám phá các thành phố như Đà Nẵng, Phú Quốc hay Hồ Chí Minh, mình có thể giúp bạn tìm chuyến bay và khách sạn ở đó. Bạn muốn đi từ đâu và có ngân sách bao nhiêu?",
+  "trace": {
+    "intent": "react_langgraph",
+    "action": "trả_lời_trực_tiếp",
+    "workflow": [
+      "Nhận yêu cầu người dùng",
+      "LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)",
+      "Trả lời cuối cho người dùng"
+    ],
+    "tool_calls": []
+  },
+  "memory_after": {},
+  "messages_in_turn": [
+    {
+      "type": "HumanMessage",
+      "content": "tôi thích lên núi"
+    },
+    {
+      "type": "AIMessage",
+      "content": "Trong phạm vi dữ liệu hiện tại, mình không có thông tin về các điểm đến núi. Tuy nhiên, nếu bạn muốn khám phá các thành phố như Đà Nẵng, Phú Quốc hay Hồ Chí Minh, mình có thể giúp bạn tìm chuyến bay và khách sạn ở đó. Bạn muốn đi từ đâu và có ngân sách bao nhiêu?",
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 77,
+          "prompt_tokens": 2803,
+          "total_tokens": 2880,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 2688
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "gpt-4o-mini-2024-07-18",
+        "system_fingerprint": "fp_17903ecff9",
+        "id": "chatcmpl-DRxRJyKarQNLePyFfLQW9qMhBBB9D",
+        "service_tier": "default",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "usage_metadata": {
+        "input_tokens": 2803,
+        "output_tokens": 77,
+        "total_tokens": 2880,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 2688
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      }
+    }
+  ],
+  "session_message_count": 4
+}

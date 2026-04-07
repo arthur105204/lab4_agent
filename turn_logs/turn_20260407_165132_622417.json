@@ -1,0 +1,68 @@
+{
+  "schema": "travelbuddy_turn_log_v1",
+  "timestamp_local": "2026-04-07T16:51:32.622417+07:00",
+  "timestamp_utc": "2026-04-07T09:51:32.622417+00:00",
+  "log_file": "turn_20260407_165132_622417.json",
+  "summary_text": "Thoi gian (may local): 2026-04-07T16:51:32.622417+07:00\nThoi gian (UTC): 2026-04-07T09:51:32.622417+00:00\nTen file: turn_20260407_165132_622417.json\n\n[Nguoi dung]\nTôi có sở thích đi biển\n\n[Trace] intent=react_langgraph | hanh_dong=trả_lời_trực_tiếp\n[Workflow]\n  - Nhận yêu cầu người dùng\n  - LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)\n  - Trả lời cuối cho người dùng\n\n[Tool calls] tong so lan goi: 0\n\n[Tin nhan trong luot - tom tat (xem messages_in_turn day du)]\n  - HumanMessage: Tôi có sở thích đi biển\n  - AIMessage: Tuyệt vời! Nếu bạn thích đi biển, mình gợi ý một số điểm đến nổi bật ở Việt Nam như:\n\n1. **Phú Quốc** - Nổi tiếng với bãi biển đẹp và nước biển trong xanh.\n2. **Đà Nẵng** - Có bãi biển Mỹ Khê và nhiều hoạt động thú vị khác.\n3. **Nha Trang** - Cũng là một điểm đến biển tuyệt vời, nhưng không có trong dữ liệu hiện tại.\n\nBạn có muốn tìm chuyến bay và khách sạn đến một trong những địa điểm này không? Nếu có, hãy cho mình biết bạn muốn đi từ đâu và khoảng thời gian dự kiến nhé!\n\n[Cau tra loi cuoi]\nTuyệt vời! Nếu bạn thích đi biển, mình gợi ý một số điểm đến nổi bật ở Việt Nam như:\n\n1. **Phú Quốc** - Nổi tiếng với bãi biển đẹp và nước biển trong xanh.\n2. **Đà Nẵng** - Có bãi biển Mỹ Khê và nhiều hoạt động thú vị khác.\n3. **Nha Trang** - Cũng là một điểm đến biển tuyệt vời, nhưng không có trong dữ liệu hiện tại.\n\nBạn có muốn tìm chuyến bay và khách sạn đến một trong những địa điểm này không? Nếu có, hãy cho mình biết bạn muốn đi từ đâu và khoảng thời gian dự kiến nhé!\n\n[Bo nho session sau luot - JSON]\n{}",
+  "user_input": "Tôi có sở thích đi biển",
+  "final_reply": "Tuyệt vời! Nếu bạn thích đi biển, mình gợi ý một số điểm đến nổi bật ở Việt Nam như:\n\n1. **Phú Quốc** - Nổi tiếng với bãi biển đẹp và nước biển trong xanh.\n2. **Đà Nẵng** - Có bãi biển Mỹ Khê và nhiều hoạt động thú vị khác.\n3. **Nha Trang** - Cũng là một điểm đến biển tuyệt vời, nhưng không có trong dữ liệu hiện tại.\n\nBạn có muốn tìm chuyến bay và khách sạn đến một trong những địa điểm này không? Nếu có, hãy cho mình biết bạn muốn đi từ đâu và khoảng thời gian dự kiến nhé!",
+  "trace": {
+    "intent": "react_langgraph",
+    "action": "trả_lời_trực_tiếp",
+    "workflow": [
+      "Nhận yêu cầu người dùng",
+      "LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)",
+      "Trả lời cuối cho người dùng"
+    ],
+    "tool_calls": []
+  },
+  "memory_after": {},
+  "messages_in_turn": [
+    {
+      "type": "HumanMessage",
+      "content": "Tôi có sở thích đi biển"
+    },
+    {
+      "type": "AIMessage",
+      "content": "Tuyệt vời! Nếu bạn thích đi biển, mình gợi ý một số điểm đến nổi bật ở Việt Nam như:\n\n1. **Phú Quốc** - Nổi tiếng với bãi biển đẹp và nước biển trong xanh.\n2. **Đà Nẵng** - Có bãi biển Mỹ Khê và nhiều hoạt động thú vị khác.\n3. **Nha Trang** - Cũng là một điểm đến biển tuyệt vời, nhưng không có trong dữ liệu hiện tại.\n\nBạn có muốn tìm chuyến bay và khách sạn đến một trong những địa điểm này không? Nếu có, hãy cho mình biết bạn muốn đi từ đâu và khoảng thời gian dự kiến nhé!",
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 143,
+          "prompt_tokens": 2603,
+          "total_tokens": 2746,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 2560
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "gpt-4o-mini-2024-07-18",
+        "system_fingerprint": "fp_2e9401d89c",
+        "id": "chatcmpl-DRxNhVfkVe98uNsuTQSXiMaZj3HUQ",
+        "service_tier": "default",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "usage_metadata": {
+        "input_tokens": 2603,
+        "output_tokens": 143,
+        "total_tokens": 2746,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 2560
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      }
+    }
+  ],
+  "session_message_count": 4
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "travelbuddy_turn_log_v1",
+  "timestamp_local": "2026-04-07T17:24:04.978296+07:00",
+  "timestamp_utc": "2026-04-07T10:24:04.979258+00:00",
+  "log_file": "turn_20260407_172404_978296.json",
+  "summary_text": "Thoi gian (may local): 2026-04-07T17:24:04.978296+07:00\nThoi gian (UTC): 2026-04-07T10:24:04.978296+00:00\nTen file: turn_20260407_172404_978296.json\n\n[Nguoi dung]\ntôi không muốn đi biển\n\n[Trace] intent=react_langgraph | hanh_dong=trả_lời_trực_tiếp\n[Workflow]\n  - Nhận yêu cầu người dùng\n  - LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)\n  - Trả lời cuối cho người dùng\n\n[Tool calls] tong so lan goi: 0\n\n[Tin nhan trong luot - tom tat (xem messages_in_turn day du)]\n  - HumanMessage: tôi không muốn đi biển\n  - AIMessage: Bạn có thể xem xét Hồ Chí Minh, nơi có nhiều điểm tham quan và hoạt động thú vị khác ngoài biển. Bạn dự định đi từ đâu, khoảng mấy đêm và ngân sách bao nhiêu để mình gợi ý cụ thể hơn nhé?\n\n[Cau tra loi cuoi]\nBạn có thể xem xét Hồ Chí Minh, nơi có nhiều điểm tham quan và hoạt động thú vị khác ngoài biển. Bạn dự định đi từ đâu, khoảng mấy đêm và ngân sách bao nhiêu để mình gợi ý cụ thể hơn nhé?\n\n[Bo nho session sau luot - JSON]\n{\"destination_city\": \"biển\"}",
+  "user_input": "tôi không muốn đi biển",
+  "final_reply": "Bạn có thể xem xét Hồ Chí Minh, nơi có nhiều điểm tham quan và hoạt động thú vị khác ngoài biển. Bạn dự định đi từ đâu, khoảng mấy đêm và ngân sách bao nhiêu để mình gợi ý cụ thể hơn nhé?",
+  "trace": {
+    "intent": "react_langgraph",
+    "action": "trả_lời_trực_tiếp",
+    "workflow": [
+      "Nhận yêu cầu người dùng",
+      "LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)",
+      "Trả lời cuối cho người dùng"
+    ],
+    "tool_calls": []
+  },
+  "memory_after": {
+    "destination_city": "biển"
+  },
+  "messages_in_turn": [
+    {
+      "type": "HumanMessage",
+      "content": "tôi không muốn đi biển"
+    },
+    {
+      "type": "AIMessage",
+      "content": "Bạn có thể xem xét Hồ Chí Minh, nơi có nhiều điểm tham quan và hoạt động thú vị khác ngoài biển. Bạn dự định đi từ đâu, khoảng mấy đêm và ngân sách bao nhiêu để mình gợi ý cụ thể hơn nhé?",
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 54,
+          "prompt_tokens": 3666,
+          "total_tokens": 3720,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 3456
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "gpt-4o-mini-2024-07-18",
+        "system_fingerprint": "fp_17903ecff9",
+        "id": "chatcmpl-DRxtEvcidBx0KmQXyLrF9Q5yKvWHb",
+        "service_tier": "default",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "usage_metadata": {
+        "input_tokens": 3666,
+        "output_tokens": 54,
+        "total_tokens": 3720,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 3456
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      }
+    }
+  ],
+  "session_message_count": 4
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "travelbuddy_turn_log_v1",
+  "timestamp_local": "2026-04-07T16:51:18.444323+07:00",
+  "timestamp_utc": "2026-04-07T09:51:18.444323+00:00",
+  "log_file": "turn_20260407_165118_444323.json",
+  "summary_text": "Thoi gian (may local): 2026-04-07T16:51:18.444323+07:00\nThoi gian (UTC): 2026-04-07T09:51:18.444323+00:00\nTen file: turn_20260407_165118_444323.json\n\n[Nguoi dung]\nXin chào, Tôi đang muốn đi du lịch nhưng chưa biết đi đâu\n\n[Trace] intent=react_langgraph | hanh_dong=trả_lời_trực_tiếp\n[Workflow]\n  - Nhận yêu cầu người dùng\n  - LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)\n  - Trả lời cuối cho người dùng\n\n[Tool calls] tong so lan goi: 0\n\n[Tin nhan trong luot - tom tat (xem messages_in_turn day du)]\n  - HumanMessage: Xin chào, Tôi đang muốn đi du lịch nhưng chưa biết đi đâu\n  - AIMessage: Chào bạn! Bạn có thể cho mình biết bạn đang ở đâu và bạn muốn khám phá thành phố nào? Hoặc nếu bạn có ý tưởng về điểm đến, hãy chia sẻ để mình có thể giúp bạn lên kế hoạch nhé!\n\n[Cau tra loi cuoi]\nChào bạn! Bạn có thể cho mình biết bạn đang ở đâu và bạn muốn khám phá thành phố nào? Hoặc nếu bạn có ý tưởng về điểm đến, hãy chia sẻ để mình có thể giúp bạn lên kế hoạch nhé!\n\n[Bo nho session sau luot - JSON]\n{}",
+  "user_input": "Xin chào, Tôi đang muốn đi du lịch nhưng chưa biết đi đâu",
+  "final_reply": "Chào bạn! Bạn có thể cho mình biết bạn đang ở đâu và bạn muốn khám phá thành phố nào? Hoặc nếu bạn có ý tưởng về điểm đến, hãy chia sẻ để mình có thể giúp bạn lên kế hoạch nhé!",
+  "trace": {
+    "intent": "react_langgraph",
+    "action": "trả_lời_trực_tiếp",
+    "workflow": [
+      "Nhận yêu cầu người dùng",
+      "LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)",
+      "Trả lời cuối cho người dùng"
+    ],
+    "tool_calls": []
+  },
+  "memory_after": {},
+  "messages_in_turn": [
+    {
+      "type": "HumanMessage",
+      "content": "Xin chào, Tôi đang muốn đi du lịch nhưng chưa biết đi đâu"
+    },
+    {
+      "type": "AIMessage",
+      "content": "Chào bạn! Bạn có thể cho mình biết bạn đang ở đâu và bạn muốn khám phá thành phố nào? Hoặc nếu bạn có ý tưởng về điểm đến, hãy chia sẻ để mình có thể giúp bạn lên kế hoạch nhé!",
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 2540,
+          "total_tokens": 2589,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 1920
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "gpt-4o-mini-2024-07-18",
+        "system_fingerprint": "fp_2e9401d89c",
+        "id": "chatcmpl-DRxNVedCk0e0XOibB8Y1htSKBw44V",
+        "service_tier": "default",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "usage_metadata": {
+        "input_tokens": 2540,
+        "output_tokens": 49,
+        "total_tokens": 2589,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 1920
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      }
+    }
+  ],
+  "session_message_count": 2
+}

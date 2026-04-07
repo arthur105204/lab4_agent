@@ -1,0 +1,141 @@
+{
+  "schema": "travelbuddy_turn_log_v1",
+  "timestamp_local": "2026-04-07T16:56:09.518081+07:00",
+  "timestamp_utc": "2026-04-07T09:56:09.518081+00:00",
+  "log_file": "turn_20260407_165609_518081.json",
+  "summary_text": "Thoi gian (may local): 2026-04-07T16:56:09.518081+07:00\nThoi gian (UTC): 2026-04-07T09:56:09.518081+00:00\nTen file: turn_20260407_165609_518081.json\n\n[Nguoi dung]\nTìm giúp tôi chuyến bay từ hà nội đi Đà Nẵng\n\n[Trace] intent=react_langgraph | hanh_dong=gọi_công_cụ\n[Workflow]\n  - Nhận yêu cầu người dùng\n  - LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)\n  - Thực thi ToolNode và quay lại agent với quan sát (observation)\n  - Lặp cho đến khi agent không còn tool call\n  - Trả lời cuối cho người dùng\n\n[Tool calls] tong so lan goi: 1\n  - search_flights: {'origin': 'Hà Nội', 'destination': 'Đà Nẵng'}\n\n[Tin nhan trong luot - tom tat (xem messages_in_turn day du)]\n  - HumanMessage: Tìm giúp tôi chuyến bay từ hà nội đi Đà Nẵng\n  - AIMessage: \n  - ToolMessage: Kết quả chuyến bay Hà Nội -> Đà Nẵng (one_way):\n1. VietJet Air | 08:30-09:50 | economy | 890.000₫\n2. Bamboo Airways | 11:00-12:20 | economy | 1.200.000₫\n3. Vietnam Airlines | 06:00-07:20 | economy | 1.450.000₫\n4. Vietnam Airlines | 14:00-15:20 | business | 2.800.000₫\n  - AIMessage: Dưới đây là các chuyến bay từ Hà Nội đến Đà Nẵng:\n\n1. **VietJet Air**: 08:30 - 09:50 | Hạng phổ thông | 890.000₫\n2. **Bamboo Airways**: 11:00 - 12:20 | Hạng phổ thông | 1.200.000₫\n3. **Vietnam Airlines**: 06:00 - 07:20 | Hạng phổ thông | 1.450.000₫\n4. **Vietnam Airlines**: 14:00 - 15:20 | Hạng thương gia | 2.800.000₫\n\nBạn muốn chọn chuyến bay nào? Sau đó, mình sẽ tìm khách sạn ở Đà Nẵng cho bạn!\n\n[Cau tra loi cuoi]\nDưới đây là các chuyến bay từ Hà Nội đến Đà Nẵng:\n\n1. **VietJet Air**: 08:30 - 09:50 | Hạng phổ thông | 890.000₫\n2. **Bamboo Airways**: 11:00 - 12:20 | Hạng phổ thông | 1.200.000₫\n3. **Vietnam Airlines**: 06:00 - 07:20 | Hạng phổ thông | 1.450.000₫\n4. **Vietnam Airlines**: 14:00 - 15:20 | Hạng thương gia | 2.800.000₫\n\nBạn muốn chọn chuyến bay nào? Sau đó, mình sẽ tìm khách sạn ở Đà Nẵng cho bạn!\n\n[Bo nho session sau luot - JSON]\n{\"budget_vnd\": 5000000, \"destination_city\": \"Đà Nẵng\", \"departure_city\": \"hà nội\"}",
+  "user_input": "Tìm giúp tôi chuyến bay từ hà nội đi Đà Nẵng",
+  "final_reply": "Dưới đây là các chuyến bay từ Hà Nội đến Đà Nẵng:\n\n1. **VietJet Air**: 08:30 - 09:50 | Hạng phổ thông | 890.000₫\n2. **Bamboo Airways**: 11:00 - 12:20 | Hạng phổ thông | 1.200.000₫\n3. **Vietnam Airlines**: 06:00 - 07:20 | Hạng phổ thông | 1.450.000₫\n4. **Vietnam Airlines**: 14:00 - 15:20 | Hạng thương gia | 2.800.000₫\n\nBạn muốn chọn chuyến bay nào? Sau đó, mình sẽ tìm khách sạn ở Đà Nẵng cho bạn!",
+  "trace": {
+    "intent": "react_langgraph",
+    "action": "gọi_công_cụ",
+    "workflow": [
+      "Nhận yêu cầu người dùng",
+      "LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)",
+      "Thực thi ToolNode và quay lại agent với quan sát (observation)",
+      "Lặp cho đến khi agent không còn tool call",
+      "Trả lời cuối cho người dùng"
+    ],
+    "tool_calls": [
+      {
+        "name": "search_flights",
+        "args": {
+          "origin": "Hà Nội",
+          "destination": "Đà Nẵng"
+        }
+      }
+    ]
+  },
+  "memory_after": {
+    "budget_vnd": 5000000,
+    "destination_city": "Đà Nẵng",
+    "departure_city": "hà nội"
+  },
+  "messages_in_turn": [
+    {
+      "type": "HumanMessage",
+      "content": "Tìm giúp tôi chuyến bay từ hà nội đi Đà Nẵng"
+    },
+    {
+      "type": "AIMessage",
+      "content": "",
+      "tool_calls": [
+        {
+          "name": "search_flights",
+          "args": {
+            "origin": "Hà Nội",
+            "destination": "Đà Nẵng"
+          },
+          "id": "call_MHMn5Yat30M88Ql8SA8Z2zul",
+          "type": "tool_call"
+        }
+      ],
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 25,
+          "prompt_tokens": 3075,
+          "total_tokens": 3100,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 1920
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "gpt-4o-mini-2024-07-18",
+        "system_fingerprint": "fp_17903ecff9",
+        "id": "chatcmpl-DRxS9nMI6QV1BP3BPrzaDzdgEMmBy",
+        "service_tier": "default",
+        "finish_reason": "tool_calls",
+        "logprobs": null
+      },
+      "usage_metadata": {
+        "input_tokens": 3075,
+        "output_tokens": 25,
+        "total_tokens": 3100,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 1920
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      }
+    },
+    {
+      "type": "ToolMessage",
+      "content": "Kết quả chuyến bay Hà Nội -> Đà Nẵng (one_way):\n1. VietJet Air | 08:30-09:50 | economy | 890.000₫\n2. Bamboo Airways | 11:00-12:20 | economy | 1.200.000₫\n3. Vietnam Airlines | 06:00-07:20 | economy | 1.450.000₫\n4. Vietnam Airlines | 14:00-15:20 | business | 2.800.000₫",
+      "name": "search_flights",
+      "tool_call_id": "call_MHMn5Yat30M88Ql8SA8Z2zul",
+      "status": "success"
+    },
+    {
+      "type": "AIMessage",
+      "content": "Dưới đây là các chuyến bay từ Hà Nội đến Đà Nẵng:\n\n1. **VietJet Air**: 08:30 - 09:50 | Hạng phổ thông | 890.000₫\n2. **Bamboo Airways**: 11:00 - 12:20 | Hạng phổ thông | 1.200.000₫\n3. **Vietnam Airlines**: 06:00 - 07:20 | Hạng phổ thông | 1.450.000₫\n4. **Vietnam Airlines**: 14:00 - 15:20 | Hạng thương gia | 2.800.000₫\n\nBạn muốn chọn chuyến bay nào? Sau đó, mình sẽ tìm khách sạn ở Đà Nẵng cho bạn!",
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 171,
+          "prompt_tokens": 3225,
+          "total_tokens": 3396,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 3072
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "gpt-4o-mini-2024-07-18",
+        "system_fingerprint": "fp_17903ecff9",
+        "id": "chatcmpl-DRxSAiIYhoGJzkgwdi8ee8p5rGa5w",
+        "service_tier": "default",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "usage_metadata": {
+        "input_tokens": 3225,
+        "output_tokens": 171,
+        "total_tokens": 3396,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 3072
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      }
+    }
+  ],
+  "session_message_count": 12
+}

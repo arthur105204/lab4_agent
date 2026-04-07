@@ -1,0 +1,73 @@
+{
+  "schema": "travelbuddy_turn_log_v1",
+  "timestamp_local": "2026-04-07T17:17:37.501431+07:00",
+  "timestamp_utc": "2026-04-07T10:17:37.501431+00:00",
+  "log_file": "turn_20260407_171737_501431.json",
+  "summary_text": "Thoi gian (may local): 2026-04-07T17:17:37.501431+07:00\nThoi gian (UTC): 2026-04-07T10:17:37.501431+00:00\nTen file: turn_20260407_171737_501431.json\n\n[Nguoi dung]\ncó những khách sạn nào\n\n[Trace] intent=react_langgraph | hanh_dong=trả_lời_trực_tiếp\n[Workflow]\n  - Nhận yêu cầu người dùng\n  - LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)\n  - Trả lời cuối cho người dùng\n\n[Tool calls] tong so lan goi: 0\n\n[Tin nhan trong luot - tom tat (xem messages_in_turn day du)]\n  - HumanMessage: có những khách sạn nào\n  - AIMessage: Dưới đây là danh sách các khách sạn tại Phú Quốc mà bạn có thể tham khảo:\n\n1. **9Station Hostel**\n   - **Sao:** 2 sao\n   - **Địa điểm:** Dương Đông\n   - **Đánh giá:** 4.5/5\n   - **Giá:** 200.000₫/đêm\n\n2. **Vinpearl Resort**\n   - **Sao:** 5 sao\n   - **Địa điểm:** Bãi Dài\n   - **Đánh giá:** 4.4/5\n   - **Giá:** 3.500.000₫/đêm\n\n3. **Sol by Meliá**\n   - **Sao:** 4 sao\n   - **Địa điểm:** Bãi Trường\n   - **Đánh giá:** 4.2/5\n   - **Giá:** 1.500.000₫/đêm\n\n4. **Lahana Resort**\n   - **Sao:** 3 sao\n   - **Địa điểm:** Dương Đông\n   - **Đánh giá:** 4.0/5\n   - **Giá:** 800.000₫/đêm\n\nNếu bạn cần thêm thông tin hoặc muốn đặt phòng, hãy cho mình biết nhé!\n\n[Cau tra loi cuoi]\nDưới đây là danh sách các khách sạn tại Phú Quốc mà bạn có thể tham khảo:\n\n1. **9Station Hostel**\n   - **Sao:** 2 sao\n   - **Địa điểm:** Dương Đông\n   - **Đánh giá:** 4.5/5\n   - **Giá:** 200.000₫/đêm\n\n2. **Vinpearl Resort**\n   - **Sao:** 5 sao\n   - **Địa điểm:** Bãi Dài\n   - **Đánh giá:** 4.4/5\n   - **Giá:** 3.500.000₫/đêm\n\n3. **Sol by Meliá**\n   - **Sao:** 4 sao\n   - **Địa điểm:** Bãi Trường\n   - **Đánh giá:** 4.2/5\n   - **Giá:** 1.500.000₫/đêm\n\n4. **Lahana Resort**\n   - **Sao:** 3 sao\n   - **Địa điểm:** Dương Đông\n   - **Đánh giá:** 4.0/5\n   - **Giá:** 800.000₫/đêm\n\nNếu bạn cần thêm thông tin hoặc muốn đặt phòng, hãy cho mình biết nhé!\n\n[Bo nho session sau luot - JSON]\n{\"departure_city\": \"Hà Nội\", \"destination_city\": \"Phú Quốc\", \"budget_vnd\": 5000000, \"nights\": 2}",
+  "user_input": "có những khách sạn nào",
+  "final_reply": "Dưới đây là danh sách các khách sạn tại Phú Quốc mà bạn có thể tham khảo:\n\n1. **9Station Hostel**\n   - **Sao:** 2 sao\n   - **Địa điểm:** Dương Đông\n   - **Đánh giá:** 4.5/5\n   - **Giá:** 200.000₫/đêm\n\n2. **Vinpearl Resort**\n   - **Sao:** 5 sao\n   - **Địa điểm:** Bãi Dài\n   - **Đánh giá:** 4.4/5\n   - **Giá:** 3.500.000₫/đêm\n\n3. **Sol by Meliá**\n   - **Sao:** 4 sao\n   - **Địa điểm:** Bãi Trường\n   - **Đánh giá:** 4.2/5\n   - **Giá:** 1.500.000₫/đêm\n\n4. **Lahana Resort**\n   - **Sao:** 3 sao\n   - **Địa điểm:** Dương Đông\n   - **Đánh giá:** 4.0/5\n   - **Giá:** 800.000₫/đêm\n\nNếu bạn cần thêm thông tin hoặc muốn đặt phòng, hãy cho mình biết nhé!",
+  "trace": {
+    "intent": "react_langgraph",
+    "action": "trả_lời_trực_tiếp",
+    "workflow": [
+      "Nhận yêu cầu người dùng",
+      "LangGraph ReAct: agent chọn hành động (gọi công cụ hoặc trả lời)",
+      "Trả lời cuối cho người dùng"
+    ],
+    "tool_calls": []
+  },
+  "memory_after": {
+    "departure_city": "Hà Nội",
+    "destination_city": "Phú Quốc",
+    "budget_vnd": 5000000,
+    "nights": 2
+  },
+  "messages_in_turn": [
+    {
+      "type": "HumanMessage",
+      "content": "có những khách sạn nào"
+    },
+    {
+      "type": "AIMessage",
+      "content": "Dưới đây là danh sách các khách sạn tại Phú Quốc mà bạn có thể tham khảo:\n\n1. **9Station Hostel**\n   - **Sao:** 2 sao\n   - **Địa điểm:** Dương Đông\n   - **Đánh giá:** 4.5/5\n   - **Giá:** 200.000₫/đêm\n\n2. **Vinpearl Resort**\n   - **Sao:** 5 sao\n   - **Địa điểm:** Bãi Dài\n   - **Đánh giá:** 4.4/5\n   - **Giá:** 3.500.000₫/đêm\n\n3. **Sol by Meliá**\n   - **Sao:** 4 sao\n   - **Địa điểm:** Bãi Trường\n   - **Đánh giá:** 4.2/5\n   - **Giá:** 1.500.000₫/đêm\n\n4. **Lahana Resort**\n   - **Sao:** 3 sao\n   - **Địa điểm:** Dương Đông\n   - **Đánh giá:** 4.0/5\n   - **Giá:** 800.000₫/đêm\n\nNếu bạn cần thêm thông tin hoặc muốn đặt phòng, hãy cho mình biết nhé!",
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 281,
+          "prompt_tokens": 4762,
+          "total_tokens": 5043,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 4608
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "gpt-4o-mini-2024-07-18",
+        "system_fingerprint": "fp_17903ecff9",
+        "id": "chatcmpl-DRxmty1yMVK7bVcy4ccFQlxNbJel1",
+        "service_tier": "default",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "usage_metadata": {
+        "input_tokens": 4762,
+        "output_tokens": 281,
+        "total_tokens": 5043,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 4608
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      }
+    }
+  ],
+  "session_message_count": 14
+}

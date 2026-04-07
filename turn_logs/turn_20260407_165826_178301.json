@@ -1,0 +1,36 @@
+{
+  "schema": "travelbuddy_turn_log_v1",
+  "timestamp_local": "2026-04-07T16:58:26.178301+07:00",
+  "timestamp_utc": "2026-04-07T09:58:26.178301+00:00",
+  "log_file": "turn_20260407_165826_178301.json",
+  "summary_text": "Thoi gian (may local): 2026-04-07T16:58:26.178301+07:00\nThoi gian (UTC): 2026-04-07T09:58:26.178301+00:00\nTen file: turn_20260407_165826_178301.json\n\n[Nguoi dung]\nGiải giúp tôi bài tập lập trình python về linked list\n\n[Trace] intent=ngoài_phạm_vi | hanh_dong=từ_chối\n[Workflow]\n  - Nhận yêu cầu người dùng\n  - Phát hiện nội dung ngoài phạm vi du lịch\n  - Trả lời từ chối cố định, không gọi công cụ\n\n[Tool calls] tong so lan goi: 0\n\n[Tin nhan trong luot - tom tat (xem messages_in_turn day du)]\n  - HumanMessage: Giải giúp tôi bài tập lập trình python về linked list\n  - AIMessage: Xin lỗi, tôi chỉ hỗ trợ các yêu cầu liên quan đến du lịch. Nếu bạn cần, tôi có thể giúp lên kế hoạch chuyến đi theo ngân sách.\n\n[Cau tra loi cuoi]\nXin lỗi, tôi chỉ hỗ trợ các yêu cầu liên quan đến du lịch. Nếu bạn cần, tôi có thể giúp lên kế hoạch chuyến đi theo ngân sách.\n\n[Bo nho session sau luot - JSON]\n{\"budget_vnd\": 5000000, \"destination_city\": \"Đà Nẵng\", \"departure_city\": \"hà nội\", \"nights\": 2}",
+  "user_input": "Giải giúp tôi bài tập lập trình python về linked list",
+  "final_reply": "Xin lỗi, tôi chỉ hỗ trợ các yêu cầu liên quan đến du lịch. Nếu bạn cần, tôi có thể giúp lên kế hoạch chuyến đi theo ngân sách.",
+  "trace": {
+    "intent": "ngoài_phạm_vi",
+    "action": "từ_chối",
+    "workflow": [
+      "Nhận yêu cầu người dùng",
+      "Phát hiện nội dung ngoài phạm vi du lịch",
+      "Trả lời từ chối cố định, không gọi công cụ"
+    ],
+    "tool_calls": []
+  },
+  "memory_after": {
+    "budget_vnd": 5000000,
+    "destination_city": "Đà Nẵng",
+    "departure_city": "hà nội",
+    "nights": 2
+  },
+  "messages_in_turn": [
+    {
+      "type": "HumanMessage",
+      "content": "Giải giúp tôi bài tập lập trình python về linked list"
+    },
+    {
+      "type": "AIMessage",
+      "content": "Xin lỗi, tôi chỉ hỗ trợ các yêu cầu liên quan đến du lịch. Nếu bạn cần, tôi có thể giúp lên kế hoạch chuyến đi theo ngân sách."
+    }
+  ],
+  "session_message_count": 21
+}
